@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Acme', sans-serif;
+    background: url(../img/bg.png) 20px;
+    background-color: rgb(154, 192, 18);
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 4.5rem;
+     margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+.svg-inline--fa .fa-hand-holding-usd .fa-w-18{
+    margin: 0 auto;
+}
+
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-areas: 'topo'
+                         'principal'
+                         'res'
+                         'rodape';
+    grid-template-rows: auto 1fr auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.2);
+}
+
+#contador span{
+    font-size: 4rem;
+    font-family: 'Bree Serif', serif;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+input#notasValor{
+    width: 50%;
+    border: 1px solid #ced4da;
+    color: red;
+    display: flex;
+    font-size:1.7rem;
+    padding-left: 10px;
+}
+#topo{
+    grid-area: topo;
+    margin: 10px auto;
+    display: flex;
+}
+
+#principal{
+    grid-area: principal;
+    width: 80%;
+    margin: 10px auto;
+}
+#res{
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 2px;
+    border:1px solid rgba(255, 255, 255, 0.70);
+    width: 80%;
+    height: auto;
+    grid-gap: 15px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-areas: 'textoProv';
+}
+#res p{
+    font-size: 1.5rem;
+    padding-left: 5px;
+}
+#notas{
+    grid-area: notas;
+    display: none;
+}
+#moedas{
+    grid-area: moedas;
+    display: none;
+}
+h1.txtRes{
+    color: red;
+    grid-area: textoProv;
+    display: flex;
+    text-align: center;
+    margin:0 auto;
+    font-size: 2rem;
+}
+#rodape{
+    grid-area: rodape;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons a{
+    font-size: 3rem;
+    padding-right:10px;
+    padding-top: 5px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.icons a:hover{
+    color: rgba(0, 0, 0, 1);
+}
+#rodape h1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+input#btnEnviar:hover {
+    cursor: pointer;
+}
+
+
+
+/*MEDIAS*/
+@media screen and (max-width:295px){
+    #contador{
+        display: flex;
+       flex-wrap: wrap;
+    }
+    #res {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'notas'
+                              'moedas';
+    }
+    #rodape h1 {
+        font-size: 1em;
+    }
+    a.logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons a {
+        font-size: 2rem;
+    }
+    a.logo i{
+        text-align: center;
+        flex : 1
+    }
+    a.logo span{
+       text-align: center;
+       flex : 2
+    }
+    div.input-group-prepend {
+        margin-left: 0;
+    }
+    #contador span {
+        font-size: 3.1rem;
+    }
+    input#notasValor{
+        border-radius: 0 5px 5px 0;
+        font-size: 1.5rem;
+    }
+    .input-group input#btnEnviar{
+        width: 90%;
+        margin-top: 5px;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+@media screen and (max-width:357px){ /*MOBILE MENOR*/
+    
+    #contador{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    a.logo{
+    display: grid;
+    grid-template-areas: 'icone'
+                         'logo';
+    font-size: 2rem;
+    }
+    #res {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'notas'
+                              'moedas';
+    }
+    #rodape h1 {
+        font-size: 1.5em;
+    }
+    .icons a {
+        font-size: 2.5rem;
+    }
+    a.logo{
+    display: flex;
+    flex-direction: column;
+    }
+    a.logo i{
+        text-align: center;
+        font-size: 3.2rem;
+        grid-area: icone;
+    }
+    a.logo span{
+       text-align: center;
+       grid-area: logo;
+    }
+    .container{
+    width: 95%;
+}
+    input#notasValor{
+        font-size: 1.5rem;
+    }
+    .input-group input#btnEnviar{
+    width: 90%;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+    div.input-group-prepend {
+    margin-left: 0;
+}
+}
+
+@media screen and (min-width:358px) and (max-width:567px){ /*MOBILE MEDIOS*/
+    a.logo{
+    font-size: 2.25rem;
+    display: grid;
+    grid-template-areas: 'icone'
+                         'logo';
+}
+    a.logo i{
+    text-align: center;
+    font-size: 3.5rem;
+    grid-area: icone;
+}
+    a.logo span{
+   text-align: center;
+   grid-area: logo;
+}
+    .container{
+    width: 90%;
+    
+}
+    #res {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'notas'
+                          'moedas';
+}
+
+    #rodape h1 {
+    font-size: 1.8em;
+}
+
+
+    .icons a {
+    font-size: 2.2rem;
+}
+    .input-group input#btnEnviar {
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 10px 10px 10px 10px;
+    grid-area: btnEnviar;
+}
+    .input-group span{
+        grid-area: valor;
+        text-align: center;
+}
+    #contador span.input-group-text {
+        grid-area: prepend;
+}
+    input#notasValor{
+        grid-area: notasValor;
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    div.input-group{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-areas: 'valor valor'
+                         'prepend notasValor'
+                         'btnEnviar btnEnviar';
+}
+
+}
+
+
+@media screen and (min-width:568px) and (max-width:768px){ /*MOBILE MAIORES*/
+    a.logo{
+        font-size: 3rem;
+}
+    .container{
+        width: 90%;
+        
+}
+    #res {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'notas'
+                          'moedas';
+}
+
+    #rodape h1 {
+    font-size: 1.8em;
+}
+
+
+    .icons a {
+    font-size: 2.4rem;
+}
+    div.input-group-prepend {
+    margin-left: 25%;
+}
+.input-group input#btnEnviar {
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 10px 10px 10px 10px;
+    grid-area: btnEnviar;
+}
+    .input-group span{
+        grid-area: valor;
+        text-align: center;
+}
+    #contador span.input-group-text {
+        grid-area: prepend;
+}
+    input#notasValor{
+        grid-area: notasValor;
+        width: 92%;
+    }
+    div.input-group{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-areas: 'valor valor'
+                         'prepend notasValor'
+                         'btnEnviar btnEnviar';
+}
+}
+@media screen and (min-width:769px) and (max-width:1247px){ /*TABLETS*/
+    a.logo{
+        font-size: 4rem;
+}
+    #res {
+    width: 80%;
+    display: grid;
+    grid-template-areas: 'notas moedas'
+}
+
+    #rodape h1 {
+    font-size: 2em;
+}
+
+
+    .icons a {
+    font-size: 2.6rem;
+}
+
+    .container{
+        width: 85%;    
+}
+.input-group input#btnEnviar {
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 10px 10px 10px 10px;
+    grid-area: btnEnviar;
+}
+    .input-group span{
+        grid-area: valor;
+        text-align: center;
+}
+    #contador span.input-group-text {
+        grid-area: prepend;
+}
+    input#notasValor{
+        grid-area: notasValor;
+        width: 93%;
+        height: 80px;
+    }
+    div.input-group{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-areas: 'valor valor'
+                         'prepend notasValor'
+                         'btnEnviar btnEnviar';
+}
+}
+
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .input-group-prepend,
+  .input-group-append {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .input-group-prepend {
+    margin-right: -1px;
+    margin-left: 15px;
+  }
+  
+  .input-group-append {
+    margin-left: -1px;
+  }
+
+ #contador span.input-group-text {
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+  }
+  
+  .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+input#btnEnviar{
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0 10px 10px 0;
+}
+
