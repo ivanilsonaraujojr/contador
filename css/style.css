@@ -32,11 +32,11 @@ a{
     grid-template-areas: 'topo'
                          'contarnotas'
                          'rodape';
-    grid-template-rows: 170px auto 170px;
+    grid-template-rows: 170px 80vh 170px;
     background:url('../img/cash.jpg') 100% no-repeat;
     background-size: cover;
     max-width: 960px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 /*Topo*/
 .topo{
