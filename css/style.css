@@ -113,7 +113,7 @@ a{
 .contarnotas__resultado{
     width: 275px;
     padding: 5%;
-    min-height: 220px;
+    min-height: 200px;
     margin: 2% 0;
     color: var(--branco);
     background-color: var(--cinzinha);
