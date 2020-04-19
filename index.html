@@ -3,60 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador de Dinheiro - JS</title>
+    <title>Contador de Dinheiro</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 </head>
 <body>
     <div class="container">
-        <header id="topo">
-            <a href="#" class="logo"><i class="fas fa-hand-holding-usd"></i><span>  Contador de Dinheiro</span></a>
+        <header class="topo">
+            <i class="topo__icon fas fa-hand-holding-usd"></i>
+            <span class="topo__logo">Contador de Dinheiro</span>
         </header>
-        <article id="principal">
-             <div id="contador">
-                 <div class="input-group">
-                    <span>Valor:<br></span>
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">R$</span>
-                    </div>
-                <input type="number" step="0.01" min="0.01" name="notasValor" id="notasValor" placeholder="EX: 0.01" required>
-                <input type="button" value="Contar" id="btnEnviar">
-                </div>
-             </div>
-             <div id="res">
-                 <div id="notas">
-                    <p class="nota100"></p>
-                    <p class="nota50"></p>
-                    <p class="nota20"></p>
-                    <p class="nota10"></p>
-                    <p class="nota5"></p>
-                    <p class="nota2"></p>
-                 </div>
-                 <div id="moedas">
-                    <p class="moedas1"></p>
-                    <p class="moedas50"></p>
-                    <p class="moedas25"></p>
-                    <p class="moedas10"></p>
-                    <p class="moedas05"></p>
-                    <p class="moedas01"></p>
-                 </div>
-                    <h1 class="txtRes">Insira um valor para exibir a divisão em notas e moedas ;)</h1>
-            </div>
-        </article>
-        <footer id="rodape">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/ivanilson-junior-052937186/" title="Clique para acessar meu LinkedIN">
-                    <i class="fab fa-linkedin"></i>
+
+        <main class="contarnotas">
+        <div class="contarnotas__form">
+            <div class="contarnotas__cifrao">R$</div>
+            <input class="contarnotas__valor" type="number" autocomplete="off" placeholder="Digite o valor aqui">
+            <button class="contarnotas__botao">Contar</button>
+        </div>
+            <p class="contarnotas__resultado">Insira um valor para exibir a divisão em notas</p>
+        </main>
+
+        <footer class="rodape">
+        <div class="rodape__icons">
+            <a href="https://www.linkedin.com/in/ivanilson-junior-052937186/" title="Clique para acessar meu LinkedIN">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            
+            <a href="https://instagram.com/junioraraujo.o/" title="Clique para acessar meu Instagram">
+            <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/ivanilsonaraujojr" title="Clique para acessar meu GitHub">
+                <i class="fab fa-github"></i>
                 </a>
-                <a href="https://instagram.com/junioraraujo.o/" title="Clique para acessar meu Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            <h1>Copyright © QuebradaDev 2020. Todos os direitos reservados.</h1>
-        </footer>
-    
+        </div>
+            <h1 class="rodape__texto">Copyright © QuebradaDev 2020.</h1>
+            <p class="rodape__subtitutlo">Todos os direitos reservados.</p>
+            <p class="rodape__subtitutlo">Contador de Dinheiro v2.0.</p>
+    </footer>
     </div>
     <script src="js/script.js"></script>
+<<<<<<< Updated upstream
 </html>
+=======
+</body>
+</html>
+
+>>>>>>> Stashed changes
