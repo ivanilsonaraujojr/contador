@@ -3,11 +3,12 @@ const caixaValor = document.querySelector('.contarnotas__valor');
 const botaoValor = document.querySelector('.contarnotas__botao');
 const divResultado = document.querySelector('.contarnotas__resultado');
 
+// Chamar função para dividir cedulas quando clickar no botão
 botaoValor.addEventListener("click", function(){
     dividirCedulas(caixaValor.value)
 })
 
-
+// função para dividir as cedulas
 function dividirCedulas(notasInseridas){
     const cedulas = [100,50,20,10,5,2,1]
     let divisao = 0
